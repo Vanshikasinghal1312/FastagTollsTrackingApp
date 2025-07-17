@@ -5,7 +5,7 @@ import moment from 'moment';
 
 
 export default function TollsDetailsScreen({route}){
-     const {tolls} = route.params
+     const {tolls} = route.params || {}
     return(
             <SafeAreaView style={{flex:1}}>
             {/* <Text style={{fontWeight:'600', marginTop:30, fontSize:20, }}> Tolls Details: </Text> */}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {View, Text, Image, TextInput, TouchableOpacity, Alert} from 'react-native'
-import OTPVerification from "../Screens/OtpconfirmationSceeen";
+import OTPVerification from "./OtpconfirmationSceeen";
+
 
 export default function LoginScreen(props){
     const [phoneNumber, setPhoneNumber] =useState('')
@@ -23,9 +24,6 @@ export default function LoginScreen(props){
     }
     return(
         <View>
-        {/* <Image style={{height:250, width:300,justifyContent:'center', alignSelf:'center'}}
-        source={require('../image/pic.png')}
-        /> */}
         <Image style={{height:250, width:180,justifyContent:'center', alignSelf:'center', marginTop:40}}
         source={require('../image/illustration-2.png')}
         />

@@ -1,19 +1,18 @@
 import React from 'react'
-import {View, Text, StyleSheet,Image, Pressable, TouchableOpacity} from 'react-native'
-import LoginScreen from '../Screens/LoginScreen'
-
+import {View, Text, StyleSheet,Image, Pressable, TouchableOpacity, SafeAreaView} from 'react-native'
 
 export default function HomeScreen(props){
   return(
-    <View style={styles.container}>
+    <SafeAreaView style={{ flex: 1}}>
+   
      
       <Image style={styles.logo1style}
       source={require('../image/logo.png')}
       />
        <Image style={styles.logo2style}
        source={require('../image/image.png')}
-       />
-      <Text style={{textAlign:'center', fontWeight:'bold', fontSize:30, marginTop:0}}>Logistic services</Text>
+       /> 
+      <Text style={{textAlign:'center', fontWeight:'bold', fontSize:30}}>Logistic services</Text>
 
        <Text style={{textAlign:'center',marginLeft:30, marginRight:20, fontSize:15, marginTop:6}}>Welcome to our logistic App where you can track{'\n'}
        <Text style={{marginLeft:100, fontSize:15, marginRight:80}}> your shipments easily and efficiently
@@ -32,7 +31,8 @@ export default function HomeScreen(props){
         </View>
          
        
-    </View>
+
+    </SafeAreaView>
   )
 }
 

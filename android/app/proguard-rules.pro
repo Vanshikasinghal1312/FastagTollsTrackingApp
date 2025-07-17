@@ -7,4 +7,15 @@
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
-# Add any project specific keep options here:
+
+# React Native / Navigation / Firebase Proguard rules
+-keep class com.swmansion.** { *; }
+-keep class com.facebook.react.** { *; }
+-dontwarn com.facebook.react.**
+-keep class com.google.firebase.** { *; }
+-dontwarn com.google.firebase.**
+-keep class androidx.navigation.** { *; }
+
+-keep class com.google.android.gms.maps.** { *; }
+-keep interface com.google.android.gms.maps.** { *; }
+-dontwarn com.google.android.gms.maps.**

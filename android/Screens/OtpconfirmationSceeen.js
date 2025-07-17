@@ -1,6 +1,7 @@
 import React,{useRef, useState} from "react";
 import {View, Text, Image, TouchableOpacity, TextInput, Alert} from 'react-native'
-import OnboardingScreen from '../Screens/OnboardingScreen'
+import OnboardingScreen from './OnboardingScreen'
+
 
 export default function OTPVerification(props){
     return(
@@ -9,10 +10,6 @@ export default function OTPVerification(props){
             style={{height:250, width:180,justifyContent:'center', alignSelf:'center', marginTop:40}}
             source={require('../image/illustration-3.png')}
             />
-              {/* <Image 
-            style={{height:250, width:180,justifyContent:'center', alignSelf:'center', marginTop:40}}
-            source={require('../image/verification.png')}
-            /> */}
             <Text style={{fontWeight:'bold', fontSize:20, textAlign:'center'}}>Verify your phone number</Text>
             <Text style={{textAlign:'center', color:'gray', fontSize:13, marginTop:6}}>We have send the OTP to your registered mobile number </Text>
        <View >

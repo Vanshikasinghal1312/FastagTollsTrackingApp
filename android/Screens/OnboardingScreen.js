@@ -1,9 +1,6 @@
 import React, {useState, useRef} from "react";
 import {View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert} from 'react-native'
 import { useNavigation } from '@react-navigation/native';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import TrackingScreen from '../Screens/TrackingScreen'
-
 
 
 
