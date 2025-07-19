@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {View, Text, Image, TextInput, TouchableOpacity, Alert} from 'react-native'
 import OTPVerification from "./OtpconfirmationSceeen";
+import { Dimensions } from 'react-native';
 
 
 export default function LoginScreen(props){
@@ -27,7 +28,7 @@ export default function LoginScreen(props){
         <Image style={{height:250, width:180,justifyContent:'center', alignSelf:'center', marginTop:40}}
         source={require('../image/illustration-2.png')}
         />
-        <Text style={{alignSelf:'center', fontWeight:'bold', fontSize:20, marginTop:20}}>Enter your Phone number</Text>
+        <Text style={{alignSelf:'center', fontWeight:'bold', fontSize:20, marginTop:20,color:'black'}}>Enter your Phone number</Text>
         <Text style={{alignSelf:'center', marginTop:6, fontSize:12, color:'gray'}}>We will send you a 4-digit confirmation code to verfiy phone number
            </Text>
 

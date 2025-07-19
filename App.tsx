@@ -8,6 +8,9 @@ import OnboardingScreen from '../FastagTollTrackingAppSKL/android/Screens/Onboar
 import TrackingScreen from '../FastagTollTrackingAppSKL/android/Screens/TrackingScreen'
 import TollsDetailsScreen from '../FastagTollTrackingAppSKL/android/Screens/TollsDetailsScreen'
 import { SafeAreaView } from "react-native";
+import { Dimensions } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+
 
 
 const Stack = createNativeStackNavigator();
